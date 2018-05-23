@@ -1,0 +1,10 @@
+<h1>统计结果:字数总共{{count}}字！</h1>
+<h2>文本为</h2>
+{{user_text}}
+<br>
+{{wordcount}}
+<br>
+{% for x,y in sorteddict%}
+{{x}}-{{y}}
+<br>
+{% endfor %}
