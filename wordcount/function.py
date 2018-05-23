@@ -5,6 +5,7 @@ from django.shortcuts import render
 def home(request):
 	return render(request,'home.html')
 
+
 def count(request):
 	total_count=(len(request.GET['text']))
 	user_text=request.GET['text']
@@ -21,3 +22,7 @@ def count(request):
 	return render(request,'count.html',
 					{'count':total_count,'user_text':user_text,
 					'wordcount':word_count,'sorteddict':sorted_dict})
+
+
+def about(request):
+	return render(request,'about.html')
